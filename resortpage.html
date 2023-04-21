@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>Tree Finder State Parks Database</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+</head>
+
+<body class="bg-[#88A376]">
+  <header>
+    <div class="flex flex-col text-center">
+      <h1 class="text-5xl bg-green-600 px-8">Tree Finder - Your Database for State Parks.</h1>
+    </div>
+
+    <!--Button that goes back to main home page-->
+    <div class="p-2 text-4xl text-center bg-stone-400 hover:bg-stone-500">
+      <button onclick="window.location.href = 'index.html';">Home</button>
+    </div>
+  </header>
+  <div id="things">
+    <div id="hist" class=" flex flex-col columns-2xs">
+      <button id="hClearBnt" class=" flex-col bg-[#E2773E] hover:bg-stone-600 rounded btn border-2 border-black btn-info btn-block">Clear History.</button>
+    </div>
+    <div class="columns-4xl">
+      <div class="bg-stone-400 pl-5" id="itemStorgeBlock"></div>
+      <div class="bg-green-600 pl-2" id="weatherDiv">
+        <h4 class="text-center text-4xl">Weather Forecast:</h4>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="./assets/js/secondscript.js"></script>
+</body>
+
+</html>
